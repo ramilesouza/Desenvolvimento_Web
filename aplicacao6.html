@@ -1,0 +1,86 @@
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1">
+    <title>tela login</title>
+</head>
+</body>
+    <style>
+        body { 
+            font-family: arial, sans-serif;
+            background-color: #f2f2f2;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+         }
+
+         .login-container{
+            background-color:white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0. 1);
+            width: 300px;
+         }
+
+         .login-containar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+         }
+
+         .login-containar input[type="text"],
+         .login-containar input[type="password"]{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+         .login-container button {
+            width: 100%;
+            padding: 10px
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-rodius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+
+        .login-container a {
+            display: block;
+            text-align: center;
+            margin-top: 1px;
+            color: #333;
+            text-decoration: none;    
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+</body>
+
+    <div class="login-container">
+       <h2>Login</h2>
+       <form action="login_process.php" method="POST">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username"
+            placeholder="Digite seu usuário" required>
+
+            <label for="password">senha:</label>
+            <input type="password" id="password" name="password"
+            placeholder="Digite sua senha" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+        <a href="#">Esqueceu a senha?</a>
+    </div>
+
+</body>
+</html>
